@@ -1,21 +1,15 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class InputScanner {
     public static void main(String[] args) {
-        System.out.println("Write Something....  ");
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter the number b: ");
+        int b = sc.nextInt();
 
-        // Single word input
-        // String input = sc.next();
-        // System.out.println("\nYour input is: " + input);
-
-        // Return whole word(Sentence)
-        // String input = sc.nextLine();
-        // System.out.println("\nYour input is: " + input);
-
-        // Integer Input
-        int number = sc.nextInt();
-        System.out.println("\nYour input is: " + number);
+        int sum = a + b;
+        System.out.println("Sum of a & b : " + sum);
 
         sc.close();
     }
